@@ -40,7 +40,7 @@ impl eframe::App for App {
     fn save(&mut self, storage: &mut dyn eframe::Storage) {
         eframe::set_value(storage, eframe::APP_KEY, self);
     }
-    //auth save data every min
+    //auto save data every min
     fn auto_save_interval(&self) -> std::time::Duration {
         std::time::Duration::new(60, 0)
     }
